@@ -1,6 +1,6 @@
 # LitMatch — AI Book Matchmaker
 
-A personality-driven book recommendation web app available in English and Arabic.
+A personality-driven book recommendation app available in English and Arabic.
 
 **Live Demo:** [ai-book-matchmaker.vercel.app](https://ai-book-matchmaker.vercel.app)
 
@@ -8,9 +8,9 @@ A personality-driven book recommendation web app available in English and Arabic
 
 ## About
 
-LitMatch matches readers with books based on personality, mood, and interests 
-rather than browsing history. Users complete an 8-question quiz and receive a 
-reader personality type along with 5 curated book recommendations.
+LitMatch matches readers with books based on personality, mood, and interests.
+Answer 8 questions and receive your unique reader archetype along with 5 curated 
+book recommendations — a mix of English and Arabic literature.
 
 No sign-up required. Fully client-side.
 
@@ -19,13 +19,13 @@ No sign-up required. Fully client-side.
 ## Features
 
 - 8-question personality quiz covering mood, goals, and reading habits
-- 7 distinct reader personality types
+- 7 distinct reader archetypes
 - 5 book recommendations per result mixing English and Arabic literature
-- Book cover images fetched via Google Books and Open Library APIs
-- Every book card includes a reading link — free PDF, Archive.org borrow, or Google Books preview
-- Full Arabic and English language toggle with RTL support
+- High quality book cover images
+- Every book has a reading link — free PDF, borrow, or preview
+- Full Arabic and English toggle with RTL support
 - Back button on every quiz step to review and change answers
-- Smooth transitions and animations throughout
+- Smooth animations and elegant book-themed UI
 
 ---
 
