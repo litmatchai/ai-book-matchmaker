@@ -15,6 +15,7 @@ book recommendations — a mix of English and Arabic literature.
 No sign-up required. Fully client-side.
 
 ![LitMatch Preview](screenshots/landing.png)
+![LitMatch Results](screenshots/result.png)
 
 ---
 
