@@ -1,0 +1,15 @@
+Make the following improvements to the book result cards. Do not change any existing design, fonts, colors, or layout — these are additions and fixes only:
+1. Increase book recommendations to 5 per result
+Add one more book to each personality type's recommendation list. Make sure the new book fits the personality well, includes a cover image, description, "why it fits you" explanation, and either a working Read/PDF link or a fallback link. Keep the same card design as the existing books.
+2. Fix book cover image quality and fitting
+Switch to Google Books API for all covers using this format: https://books.google.com/books/content?vid=ISBN&printsec=frontcover&img=1&zoom=1&source=gbs_api — replace ISBN with the book's ISBN. If that doesn't work for a specific book, use Open Library's larger size: https://covers.openlibrary.org/b/isbn/ISBN-L.jpg. For Arabic books that don't have covers on either source, hardcode a reliable direct image URL for that specific book cover.
+3. Fix image container fitting
+The cover image container should have a fixed height of around 220px, object-fit: cover, and object-position: center so every cover fills the box cleanly without stretching, cropping badly, or leaving empty space.
+4. Fix all PDF and reading links
+Every book must have a working link using this priority order:
+
+First try Project Gutenberg (gutenberg.org), Open Library (openlibrary.org), or Hindawi (hindawi.org) for Arabic books for a completely free PDF
+If no free PDF exists, add a "Borrow on Archive.org" button linking directly to the book's page on https://archive.org/search?query=BOOK+TITLE+AUTHOR so users can borrow it for free
+If Archive.org doesn't have it, add a "View on Google Books" button linking to https://www.google.com/search?q=BOOK+TITLE+AUTHOR+book as a preview fallback
+
+No book card should ever be a dead end. Every card must always have one of these three options — a free PDF button, a borrow button, or a Google Books preview button. Label them clearly so users know what they're clicking.
